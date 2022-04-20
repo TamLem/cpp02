@@ -6,7 +6,7 @@
 /*   By: tlemma <tlemma@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 19:13:23 by tlemma            #+#    #+#             */
-/*   Updated: 2022/04/11 11:35:13 by tlemma           ###   ########.fr       */
+/*   Updated: 2022/04/11 12:39:37 by tlemma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ bool
     area2 = area(a, point, c);
     area3 = area(point, b, c);
 
+    //exclude edge or vertex points
     if ((areaBig == 0 || area1 == 0 || area2  == 0 || area3 == 0) 
         || (areaBig != area1 + area2 + area3))
         return (false);    
