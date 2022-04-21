@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tlemma <tlemma@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: tlemma <tlemma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 08:29:15 by tlemma            #+#    #+#             */
-/*   Updated: 2022/04/10 16:11:15 by tlemma           ###   ########.fr       */
+/*   Updated: 2022/04/21 20:23:59 by tlemma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ int main(void)
     std::cout << a << std::endl;
     std::cout << a++ << std::endl;
     std::cout << a << std::endl;
+    
     std::cout << b << std::endl;
     std::cout << Fixed::max(a, b) << std::endl;
 

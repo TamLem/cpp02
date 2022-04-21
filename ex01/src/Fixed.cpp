@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tlemma <tlemma@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: tlemma <tlemma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 08:27:43 by tlemma            #+#    #+#             */
-/*   Updated: 2022/04/10 13:05:49 by tlemma           ###   ########.fr       */
+/*   Updated: 2022/04/21 20:37:07 by tlemma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Fixed::Fixed(const int value) : value(value * (1 << Fixed::nFracBits))
     cout << "Int constructor called" << endl;
 }
 
-Fixed::Fixed(const float value): value (value * (1 << Fixed::nFracBits))
+Fixed::Fixed(const float value): value (roundf(value * (1 << Fixed::nFracBits)))
 {
     cout << "Float constructor called" << endl;
 }

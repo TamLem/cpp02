@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tlemma <tlemma@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: tlemma <tlemma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/10 08:27:43 by tlemma            #+#    #+#             */
-/*   Updated: 2022/04/10 16:11:07 by tlemma           ###   ########.fr       */
+/*   Updated: 2022/04/21 20:33:10 by tlemma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ Fixed::Fixed()
 Fixed::Fixed(const int value) : value(value * (1 << Fixed::nFracBits))
 {}
 
-Fixed::Fixed(const float value): value (value * (1 << Fixed::nFracBits))
+Fixed::Fixed(const float value): value (roundf(value * (1 << Fixed::nFracBits)))
 {}
 
 Fixed::Fixed(const Fixed& src)
